@@ -9,8 +9,9 @@
     <header>ABOUT US</header>
 
     <aside>
-        <nav>
+        <nav id="sidebar">
             <ul>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="history.html">Our History</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -19,6 +20,63 @@
             </ul>
         </nav>
     </aside>
+
+    <style>
+
+         /* Sidebar styles */
+        #sidebar {
+            width: 200px; /* Set a fixed width */
+            padding: 10px;
+            background: #04243e; /* Background color */
+            position: fixed; /* Keep it in place */
+            height: 100vh; /* Full height */
+            top: 0;
+            left: 0; /* Stick to the left */
+        }
+
+
+        #sidebar ul{
+           list-style: non; /*remove bullets and list defaults*/
+           padding: 0;
+           margin: 0;
+        }
+
+        #sidebar li{
+            padding: 10px 0;
+        }
+        #sidebar a {
+        text-decoration: none; /* Removes underline */
+        display: block;
+        padding: 10px;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    #sidebar a:hover {
+        background: #555;
+    }
+
+    /* Main content styles */
+    .content {
+            top: 0;
+            background-color: aquamarine;
+            margin-left: 210px; /* Shift content to the right to avoid sidebar overlap */
+            padding: 10px;
+        }
+    </style>
+
+    <h4 class = "content">About Us</h4>
+
+    <p class = "content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam optio veritatis culpa, perferendis odit quaerat cum deleniti quis possimus, animi molestias qui laboriosam recusandae harum doloremque? Placeat quod deserunt tempore?
+    </p>
+
+
+    
+
+
 
     
 </body>
